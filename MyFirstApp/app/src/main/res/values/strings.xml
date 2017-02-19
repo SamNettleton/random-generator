@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Random Number Generator</string>
+    <string name="rand_field">Press \"New Number\" to receive a number</string>
+    <string name="button_update">New Number</string>
+    <string name="button_settings">Settings</string>
+    <string name="min_value_label">Minimum Value</string>
+    <string name="max_value_label">Maximum Value</string>
+    <string name="min_value_field">Enter Lowest Desired Value</string>
+    <string name="max_value_field">Enter Highest Desired Value</string>
+    <string name="settings_title">Random Number Settings</string>
+    <string name="confirm_settings">Confirm</string>
+    <string name="cancel_settings">Cancel</string>
+</resources>
