@@ -10,4 +10,5 @@
     <string name="settings_title">Random Number Settings</string>
     <string name="confirm_settings">Confirm</string>
     <string name="cancel_settings">Cancel</string>
+    <string name="invalid_range">Minimum value must be less than the maximum value</string>
 </resources>
