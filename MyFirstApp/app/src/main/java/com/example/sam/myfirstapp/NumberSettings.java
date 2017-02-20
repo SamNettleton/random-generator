@@ -5,7 +5,6 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.support.design.widget.Snackbar;
 import android.widget.Button;
@@ -18,9 +17,14 @@ public class NumberSettings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.number_settings);
 
+        //set default numbers in min/max value spaces
+        TextView minValueField = (TextView) findViewById(R.id.min_field);
+        TextView maxValueField = (TextView) findViewById(R.id.max_field);
+        minValueField.setText(String.valueOf(MainActivity.randMin));
+        maxValueField.setText(String.valueOf(MainActivity.randMax));
+
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id
                 .coordinatorLayout);
-
         //Add a listener for confirm settings button
         Intent intent = getIntent();
         Button btnInvalidRange = (Button) findViewById(R.id.confirm_settings);
@@ -47,24 +51,6 @@ public class NumberSettings extends AppCompatActivity {
             }
         });
     }
-
-
-    /**
-    //When Confirm button is pressed on settings screen
-    public void changeRange (View view) {
-        TextView minValueField = (TextView) findViewById(R.id.min_field);
-        TextView maxValueField = (TextView) findViewById(R.id.max_field);
-        int newMin = Integer.parseInt(minValueField.getText().toString());
-        int newMax = Integer.parseInt(maxValueField.getText().toString());
-
-
-        /**String message = editText.getText().toString();
-         intent.putExtra(EXTRA_MESSAGE, message);
-         startActivity(intent);
-
-
-    }
-*/
 
     //When cancel button is pressed on settings screen
     public void backToMain (View view) {
