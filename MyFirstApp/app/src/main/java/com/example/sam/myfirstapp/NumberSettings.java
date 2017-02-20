@@ -43,14 +43,14 @@ public class NumberSettings extends AppCompatActivity {
         adaptAmountRandom.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // attaching data adapter to spinner
         amountRandom.setAdapter(adaptAmountRandom);
-
+        amountRandom.setSelection(MainActivity.numberOfRandoms);
         // creating listener for the spinner
         amountRandom.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
+                MainActivity.numberOfRandoms = position;
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 

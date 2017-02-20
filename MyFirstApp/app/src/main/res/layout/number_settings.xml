@@ -108,12 +108,24 @@
         android:text="@string/cancel_settings"
         android:onClick="backToMain" />
 
-    <Spinner android:id="@+id/amount_random"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <TextView android:id="@+id/amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/max_field"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:text="@string/amount_label"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Spinner android:id="@+id/amount_random"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/amount_label"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
 

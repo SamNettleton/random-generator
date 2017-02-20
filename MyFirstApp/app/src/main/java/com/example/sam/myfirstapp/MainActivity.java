@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static int randMin = 0;
     public static int randMax = 10000;
+    public static int numberOfRandoms = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,14 @@ public class MainActivity extends AppCompatActivity {
     public void updateNumber(View view) {
         /**Intent intent = new Intent(this, NumberSettings.class); */
         TextView newNumSpace = (TextView) findViewById(R.id.rand_field);
-        String newRandomString = MainActivity.createRandom();
-        newNumSpace.setText(newRandomString);
+        String newRandoms = "";
+        String newLine = System.getProperty("line.separator");
+        for(int i=0; i < numberOfRandoms; i++){
+            String newRandomString = MainActivity.createRandom();
+            newRandoms += newRandomString;
+            newRandoms += newLine;
+        }
+        newNumSpace.setText(newRandoms);
         /**String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent); */
