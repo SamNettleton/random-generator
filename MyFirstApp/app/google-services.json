@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "858045781347",
+    "firebase_url": "https://randomnumbergenerator-19cb6.firebaseio.com",
+    "project_id": "randomnumbergenerator-19cb6",
+    "storage_bucket": "randomnumbergenerator-19cb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858045781347:android:eca612308a5a3fde",
+        "android_client_info": {
+          "package_name": "com.rng.sam.randomnumbergenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858045781347-tc0fo1ht4cl4iusbp0tghss4k9s0gnaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHlB0yB6H0z_pWnjSFNqZJhHN_hVvH1Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
