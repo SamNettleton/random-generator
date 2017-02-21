@@ -1,4 +1,4 @@
-package com.example.sam.myfirstapp;
+package com.rng.sam.randomnumbergenerator;
 
 import org.junit.Test;
 

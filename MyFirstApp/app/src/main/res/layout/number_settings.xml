@@ -2,11 +2,12 @@
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sam.myfirstapp.NumberSettings">
+    tools:context="com.rng.sam.randomnumbergenerator.NumberSettings">
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,12 +18,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sam.myfirstapp.NumberSettings">
+    tools:context="com.rng.sam.randomnumbergenerator.NumberSettings">
 
     <View android:id="@+id/fakeView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_centerInParent="true"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
     <TextView android:id="@+id/settings_title"
         android:layout_width="match_parent"
@@ -88,11 +99,11 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@id/fakeView"
         android:layout_alignEnd="@id/fakeView"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@id/adView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
         android:text="@string/confirm_settings" />
 
     <Button android:id="@+id/cancel_settings"
@@ -100,11 +111,11 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/fakeView"
         android:layout_alignStart="@id/fakeView"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@id/adView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
         android:text="@string/cancel_settings"
         android:onClick="backToMain" />
 
