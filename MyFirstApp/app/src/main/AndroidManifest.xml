@@ -6,18 +6,27 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/app_label"
         android:screenOrientation="sensorLandscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.rng.sam.randomnumbergenerator.MainActivity">
+        <activity android:name="com.rng.sam.randomnumbergenerator.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.rng.sam.randomnumbergenerator.NumberSettings"></activity>
+        <activity android:name="com.rng.sam.randomnumbergenerator.NumberSettings"
+            android:label="@string/settings_bar" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rng.sam.randomnumbergenerator.MainActivity" />
+
+
+        </activity>
     </application>
 
 </manifest>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
@@ -35,20 +34,10 @@
         ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 
-    <TextView android:id="@+id/settings_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center_vertical"
-        android:layout_margin="10dp"
-        android:text="@string/settings_title"
-        android:gravity="center"
-        android:textSize="30sp"/>
-
     <TextView android:id="@+id/min_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/settings_title"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_gravity="center_vertical"
@@ -75,12 +64,10 @@
         android:layout_gravity="center_vertical"
         android:hint="@string/min_value_field"
         android:inputType="numberSigned"
-        android:gravity="start"
+        android:gravity="center"
         android:textSize="15sp"
-        android:layout_alignBaseline="@+id/min_label"
-        android:layout_alignBottom="@+id/min_label"
-        android:layout_alignRight="@+id/settings_title"
-        android:layout_alignEnd="@+id/settings_title" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
     <EditText android:id="@+id/max_field"
         android:layout_width="wrap_content"
@@ -88,36 +75,23 @@
         android:layout_gravity="center_vertical"
         android:hint="@string/min_value_field"
         android:inputType="numberSigned"
-        android:gravity="start"
+        android:gravity="center"
         android:textSize="15sp"
         android:layout_below="@+id/min_label"
         android:layout_alignRight="@+id/min_field"
         android:layout_alignEnd="@+id/min_field" />
 
-    <Button android:id="@+id/confirm_settings"
+    <Button android:id="@+id/save_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@id/fakeView"
         android:layout_alignEnd="@id/fakeView"
-        android:layout_above="@id/adView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="10dp"
-        android:textSize="16sp"
-        android:text="@string/confirm_settings" />
-
-    <Button android:id="@+id/cancel_settings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/fakeView"
-        android:layout_alignStart="@id/fakeView"
-        android:layout_above="@id/adView"
+        android:layout_below="@+id/amount_random"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="10dp"
         android:textSize="16sp"
-        android:text="@string/cancel_settings"
-        android:onClick="backToMain" />
+        android:text="@string/save_settings" />
 
     <TextView android:id="@+id/amount_label"
         android:layout_width="wrap_content"
@@ -131,7 +105,7 @@
         android:gravity="center"
         android:textSize="20sp" />
 
-    <Spinner android:id="@+id/amount_random"
+    <Spinner android:id="@id/amount_random"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/amount_label"
