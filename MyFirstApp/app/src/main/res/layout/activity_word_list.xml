@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/word_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rng.sam.randomnumbergenerator.WordListActivity">
+
+    <include layout="@layout/content_word_list" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/plus_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus_sign"
+        app:elevation="4dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"/>-->
+
+</android.support.design.widget.CoordinatorLayout>

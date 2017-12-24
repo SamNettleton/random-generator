@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Original
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    Pale blue, dark green-->
+    <!--<color name="colorPrimary">#1995AD</color>
+    <color name="colorPrimaryDark">#07575B</color>
+    <color name="colorAccent">#A1D6E2</color>-->
+    <color name="colorPrimary">#07575B</color>
+    <color name="colorPrimaryDark">#003B46</color>
+    <color name="colorAccent">#66A5AD</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorDarkButton">#545454</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkBackground">#3d3c3c</color>
 </resources>

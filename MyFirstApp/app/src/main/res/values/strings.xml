@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Random Number Generator</string>
-    <string name="rand_field">Press \"New Number\" to receive a number</string>
-    <string name="button_update">New Number</string>
+    <string name="rand_field">Press \"Refresh\" to receive a value</string>
+    <string name="button_update">Refresh</string>
     <string name="button_settings">Settings</string>
     <string name="min_value_label">Minimum Value</string>
     <string name="max_value_label">Maximum Value</string>
@@ -12,7 +12,25 @@
     <string name="action_settings">Settings</string>
     <string name="invalid_range">Minimum value must be less than the maximum value</string>
     <string name="amount_label">Number of Values</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7704478575667387/1147556954</string>
     <string name="app_label">Random</string>
     <string name="settings_bar">Settings</string>
+    <string name="number_option">Numbers</string>
+    <string name="word_option">Words</string>
+    <string name="dice_option">Dice</string>
+    <string name="numbers_label">Numbers</string>
+    <string name="words_label">Words</string>
+    <string name="dice_label">Dice</string>
+    <string name="general_label">General</string>
+    <string name="theme_label">Dark Theme</string>
+    <string name="shake_label">Shake to Update</string>
+    <string name="word_list_label">List of Words</string>
+    <string name="word_amount_label">Number of Words</string>
+    <string name="word_list">Word List</string>
+    <string name="word_list_title">Custom Words</string>
+    <string name="word_list_explanation">Enter custom words or phrases separated by new lines</string>
+    <string name="word_list_hint">Enter custom words</string>
+    <string name="clear">Clear</string>
+    <string name="contact_label">Contact Me</string>
+    <string name="contact_description">For requests, issues, or questions</string>
 </resources>

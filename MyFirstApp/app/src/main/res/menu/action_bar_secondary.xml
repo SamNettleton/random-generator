@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_number"
+        android:title="@string/number_option"
+        app:textAllCaps="false"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_word"
+        android:title="@string/word_option"
+        app:textAllCaps="false"
+        app:showAsAction="ifRoom"/>
+
+
+
+    <!--<item android:id="@+id/action_dice"
+        android:title="@string/dice_option"
+        app:showAsAction="always"/>-->
+
+</menu>

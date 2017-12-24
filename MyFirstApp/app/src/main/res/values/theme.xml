@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/LightButton</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarText</item>
+        <item name="editbutton_picture">@drawable/ic_edit_button</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogLight</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorDarkBackground</item>
+        <item name="android:colorBackground">@color/colorDarkBackground</item>
+        <item name="android:buttonStyle">@style/DarkButton</item>
+        <item name="editTextStyle">@style/DarkEditTextStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarText</item>
+        <item name="editbutton_picture">@drawable/ic_plus_sign_white</item>
+        <item name="alertDialogTheme">@style/AlertDialogDark</item>
+    </style>
+
+</resources>
